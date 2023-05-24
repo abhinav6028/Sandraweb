@@ -103,7 +103,7 @@ export default function Section2() {
                 mt: { xs: 2, lg: 5 },
                 ml: { xs: 2, lg: 4 }
               }}>
-                <H4 fontWeight="bold" fontWeight="600">{data.heading}</H4>
+                <H4 fontWeight="600">{data.heading}</H4>
               </Grid>
 
               <Grid container xs={10} lg={8} fontWeight="600" sx={{
