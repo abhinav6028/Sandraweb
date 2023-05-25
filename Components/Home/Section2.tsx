@@ -13,14 +13,14 @@ export default function Section2() {
       heading: 'ESSENCE OF MY LIFE',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my family',
-      path: '/myself',
+      path: '/mylife',
       img: 'Assets/sectionimages/myself.jpg'
     },
     {
       heading: 'LOVE BLOSSOMS ME AND MY FAMILY',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my childhood',
-      path: '/childhood',
+      path: '/family',
       img: 'Assets/sectionimages/chiledhoodwithfamily.jpg'
     },
     {
