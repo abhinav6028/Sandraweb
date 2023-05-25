@@ -6,8 +6,8 @@ import Section2 from './Section2'
 export default function HomePage() {
     return (
         <Grid container>
-
-            <Banner />
+            {/* 
+            <Banner /> */}
 
             <Section2 />
 

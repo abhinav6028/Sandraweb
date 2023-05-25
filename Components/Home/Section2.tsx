@@ -1,3 +1,17 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import { MAIN_COLOUR, TERNARY_COLOUR } from '@/utils/colours';
 import { Box, Grid } from '@mui/material';
 import { useRouter } from 'next/navigation';
@@ -103,7 +117,7 @@ export default function Section2() {
                 mt: { xs: 2, lg: 5 },
                 ml: { xs: 2, lg: 4 }
               }}>
-                <H4 fontWeight="600">{data.heading}</H4>
+                <H4  fontWeight="600">{data.heading}</H4>
               </Grid>
 
               <Grid container xs={10} lg={8} fontWeight="600" sx={{
@@ -135,10 +149,81 @@ export default function Section2() {
 
           </Grid>
 
-
         )
       }
 
     </Grid >
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { Box, Grid } from '@mui/material'
+// import React from 'react'
+
+// export default function Section2() {
+//   return (
+//     <Grid container justifyContent="center" sx={{
+//       bgcolor: { xs: 'blue', sm: 'yellow', md: 'green', lg: 'pink' }
+//     }} >
+
+//       <Grid xs={10} sm={10} md={10} lg={10} container justifyContent="space-around" bgcolor="red">
+
+//         <Grid sm={3} md={3} lg={3} bgcolor="" container justifyContent="center" alignItems="center">
+
+//           <Box sx={{
+//             width: { xs: 200, sm: 250, md: 300, lg: 350 },
+//             height: { xs: 200, sm: 250, md: 300, lg: 350 },
+//             bgcolor: 'blue',
+//             display: 'flex',
+//             justifyContent: 'center',
+//             alignItems: 'center'
+//           }}>
+
+//             <Box sx={{
+//               width: { xs: 150, sm: 200, md: 250, lg: 330 },
+//               height: { xs: 150, sm: 200, md: 250, lg: 300 },
+//               bgcolor: 'green',
+//               border:'5px solid red'
+
+
+//             }}></Box>
+
+
+
+
+
+//           </Box>
+
+//         </Grid>
+
+
+
+
+
+
+
+
+
+
+
+//         <Grid sm={8} md={8} lg={8} bgcolor="violet" container justifyContent="center" alignItems="center">b</Grid>
+
+//       </Grid>
+
+//     </Grid>
+//   )
+// }
+
