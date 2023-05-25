@@ -101,8 +101,12 @@ export default function Section2() {
                   my: 3,
                   height: { xs: 250, lg: 300 },
                   width: { xs: 250, lg: 300 },
+                  backgroundImage: `url('${data.img}')`,
+                  backgroundSize: 'cover'
                 }}>
-                <img src={data.img} width="100%" height="100%" alt="" />
+                {/* <img src={data.img}
+                  width="100%"
+                  height="100%" alt="" /> */}
               </Grid>
 
             </Grid>
@@ -117,7 +121,7 @@ export default function Section2() {
                 mt: { xs: 2, lg: 5 },
                 ml: { xs: 2, lg: 4 }
               }}>
-                <H4  fontWeight="600">{data.heading}</H4>
+                <H4 fontWeight="600">{data.heading}</H4>
               </Grid>
 
               <Grid container xs={10} lg={8} fontWeight="600" sx={{
