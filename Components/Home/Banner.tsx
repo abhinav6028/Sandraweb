@@ -9,7 +9,6 @@ export default function Banner() {
       backgroundImage: 'url("Assets/ Banner/Flowers.jpg")',
       backgroundSize: 'cover',
       // bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' }
-
     }} >
 
       <Grid md={11} lg={11} container sx={{
@@ -24,8 +23,8 @@ export default function Banner() {
           <Grid bgcolor="#1E1E1E" sx={{
             width: { xs: 200, sm: 340, md: 350, lg: 445 },
             height: { xs: 250, sm: 500, md: 540, lg: 610 },
-            pt: {xs:1, sm: 1, md: 2, lg: 2 },
-            pl: {xs:1, sm: 1, md: 2, lg: 2 },
+            pt: { xs: 1, sm: 1, md: 2, lg: 2 },
+            pl: { xs: 1, sm: 1, md: 2, lg: 2 },
           }} >
 
 
@@ -39,9 +38,6 @@ export default function Banner() {
           </Grid>
 
         </Grid>
-
-
-
 
 
         <Grid container md={6} lg={6} bgcolor="" alignItems="center" >

@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { MAIN_COLOUR, TERNARY_COLOUR } from '@/utils/colours';
 import { Box, Grid } from '@mui/material';
 import { useRouter } from 'next/navigation';
@@ -24,28 +10,28 @@ export default function Section2() {
 
   const sectionItems = [
     {
-      heading: 'MY SELF ',
+      heading: 'ESSENCE OF MY LIFE',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my family',
       path: '/myself',
       img: 'Assets/sectionimages/myself.jpg'
     },
     {
-      heading: 'MY CHILDHOOD WITH FAMILY',
+      heading: 'LOVE BLOSSOMS ME AND MY FAMILY',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my childhood',
       path: '/childhood',
       img: 'Assets/sectionimages/chiledhoodwithfamily.jpg'
     },
     {
-      heading: 'MY SCHOOL LIFE',
+      heading: 'COLOURFULL MEMORIES',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my school life',
       path: '/schoollife',
       img: 'Assets/sectionimages/schoollife.jpg'
     },
     {
-      heading: 'MY COLLAGE LIFE ',
+      heading: 'COLOURFULL LIFE',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my college life',
       path: '/collegelife',
@@ -53,8 +39,6 @@ export default function Section2() {
     },
 
   ]
-
-
 
   return (
     <Grid container justifyContent="center" >
@@ -146,7 +130,7 @@ export default function Section2() {
                     px: { xs: 3, lg: 6 },
                     cursor: 'pointer'
                   }}>
-                  <H5 fontWeight="550" >{data.buttonText}</H5>
+                  <H5 fontWeight="550" >SHOW MORE</H5>
                 </Box>
 
               </Grid>
@@ -154,7 +138,6 @@ export default function Section2() {
             </Grid>
 
           </Grid>
-
         )
       }
 
