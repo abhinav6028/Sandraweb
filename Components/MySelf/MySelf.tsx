@@ -1,13 +1,25 @@
-import { Grid } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import React from 'react'
-import InnerHeading from '../UI/InnerHeading/InnerHeading'
+import DetailPage from '../UI/DetailPage/DetailPage'
+import { H3 } from '../UI/Typography'
 
-function MySelf() {
+function MySelf(props: string) {
+
   return (
-    <Grid>
+    <Grid container>
 
-        <InnerHeading></InnerHeading>
-        
+      <DetailPage
+
+        heading="FIRST DAY TO A NEW BEGINNING OF LIFE."
+        description= ''
+
+
+      />
+
+
+
+
+
     </Grid>
   )
 }

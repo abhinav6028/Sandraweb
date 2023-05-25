@@ -1,8 +1,15 @@
+'use client'
+import MySelf from '@/Components/MySelf/MySelf'
+import { Grid } from '@mui/material'
 import React from 'react'
 
 function page() {
   return (
-    <div>page</div>
+    <Grid container>
+
+      <MySelf />
+
+    </Grid>
   )
 }
 
