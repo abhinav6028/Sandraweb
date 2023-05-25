@@ -103,7 +103,8 @@ export default function Section2() {
                   width: { xs: 250, lg: 300 },
                   backgroundImage: `url('${data.img}')`,
                   backgroundSize: 'cover',
-                  backgroundPosition: 'center'
+                  backgroundPosition: 'center center',
+
                 }}>
                 {/* <img src={data.img}
                   width="100%"
