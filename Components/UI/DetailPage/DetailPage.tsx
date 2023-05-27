@@ -19,7 +19,7 @@ export default function DetailPage(props: any) {
 
             images.push(
 
-                <ImageListItem>
+                <ImageListItem >
                     <img
                         src={`/Assets/innerImages/${filename}/img-${index}.jpg`}
                         alt={`image`}
@@ -68,21 +68,19 @@ export default function DetailPage(props: any) {
 
                 <Grid container xs={11.5} sm={11.5} md={11.7} lg={11}>
 
-                    <ImageList variant="masonry"
-                        sx={{
-                            columnCount: {
-                                xs: '2 !important',
-                                sm: '2 !important',
-                                md: '3 !important',
-                                lg: '4 !important',
-                            },
-                        }}
-
-                        gap={10}>
+                    <ImageList variant="masonry"  gap={8} sx={{
+                        columnCount: {
+                            xs: '2 !important',
+                            sm: '2 !important',
+                            md: '3 !important',
+                            lg: '4 !important',
+                        },
+                    }}>
 
                         {images}
 
                     </ImageList>
+
 
                 </Grid >
 
