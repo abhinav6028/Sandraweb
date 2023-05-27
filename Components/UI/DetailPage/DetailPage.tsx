@@ -4,9 +4,9 @@ import { H3, H5 } from '../Typography'
 
 export default function DetailPage(props: any) {
 
-    const { heading, description,limit,filename } = props;
+    const { heading, description, limit, filename } = props;
 
-    const images : any = []
+    const images: any = []
 
 
     const loopImages = () => {
@@ -50,7 +50,17 @@ export default function DetailPage(props: any) {
 
                 <Grid xs={9} sm={9} md={9} lg={9}>
 
-                    <ImageList variant="masonry" cols={4} gap={10}>
+                    <ImageList variant="masonry"
+                        sx={{
+                            columnCount: {
+                                xs: '2 !important',
+                                sm: '2 !important',
+                                md: '3 !important',
+                                lg: '4 !important',
+                            },
+                        }}
+                        
+                        gap={10}>
 
                         {images}
 
