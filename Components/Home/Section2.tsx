@@ -41,7 +41,7 @@ export default function Section2() {
   ]
 
   return (
-    <Grid container justifyContent="center" >
+    <Grid container justifyContent="center" overflow="none" >
 
       <Box sx={{
         width: '100%',
@@ -67,7 +67,7 @@ export default function Section2() {
       {
         sectionItems.map((data: any, index: any) =>
 
-          <Grid key={index} container lg={11} md={10} sm={9} xs={10} sx={{
+          <Grid key={index} container lg={11} md={10} sm={9} xs={11.7} sx={{
             mt: { xs: 2, sm: 2, md: 3, lg: 4 },
             justifyContent: 'space-around'
           }}>
@@ -90,9 +90,7 @@ export default function Section2() {
                   backgroundPosition: 'center center center center',
 
                 }}>
-                {/* <img src={data.img}
-                  width="100%"
-                  height="100%" alt="" /> */}
+               
               </Grid>
 
             </Grid>

@@ -44,7 +44,7 @@ export const H2 = (props: any) => {
 }
 
 export const H3 = (props: any) => {
-    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color, fontWeight, lineHeight } = props;
+    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color, fontWeight, lineHeight, fontFamily, cursor } = props;
 
     return (
         <Typography sx={{
@@ -56,7 +56,9 @@ export const H3 = (props: any) => {
             color: color,
             fontWeight: fontWeight,
             fontSize: { xs: '1.1rem', sm: '1.6rem', md: '1.8rem', lg: '2rem' },
-            lineHeight: lineHeight
+            lineHeight: lineHeight,
+            fontFamily: fontFamily,
+            cursor: cursor
         }}>
             {props.children}
         </Typography>

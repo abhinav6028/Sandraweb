@@ -8,7 +8,6 @@ export default function Banner() {
     <Grid container bgcolor="" justifyContent="center" sx={{
       backgroundImage: 'url("Assets/ Banner/Flowers.jpg")',
       backgroundSize: 'cover',
-      // bgcolor: { xs: 'red', sm: 'blue', md: 'green', lg: 'yellow' }
     }} >
 
       <Grid md={11} lg={11} container sx={{
@@ -49,8 +48,8 @@ export default function Banner() {
             ml: { xs: 4, lg: 0 }
           }}>
 
-            <H2 fontWeight="bold" fontFamily="'Righteous', cursive">Hey It's Me </H2>
-            <H1 fontWeight="bold" fontFamily="'Shadows Into Light', cursive">SANDRA MANOJ</H1>
+            <H2 fontWeight="bold" fontFamily="'Shadows Into Light', cursive">Hey It's Me </H2>
+            <H1 fontWeight="bold" fontFamily="">SANDRA MANOJ</H1>
 
           </Box>
 
