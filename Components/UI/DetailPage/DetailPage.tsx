@@ -1,12 +1,16 @@
 import { Box, Grid, ImageList, ImageListItem } from '@mui/material'
 import React from 'react'
-import { H3, H5 } from '../Typography'
+import { H3, H5 } from '../Typography';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import { useRouter } from 'next/navigation';
 
 export default function DetailPage(props: any) {
 
     const { heading, description, limit, filename } = props;
 
     const images: any = []
+
+    const router = useRouter()
 
 
     const loopImages = () => {
@@ -32,7 +36,21 @@ export default function DetailPage(props: any) {
 
 
     return (
-        <Grid container justifyContent="center">
+        <Grid container justifyContent="center" >
+
+            {/* onClick={console.log('working properly')} */}
+
+            <Grid container >
+
+                <ArrowBackIosIcon
+                    onClick={() => { router.push('/') }}
+                    sx={{
+                        fontSize: { sm: 30, md: 30, lg: 38 },
+                        ml: { xs: 3, sm: 3, md: 5, lg: 7 },
+                        mt: 3, cursor: 'pointer'
+                    }} />
+            </Grid>
+
 
             <Grid container sx={{
                 py: { xs: 2, sm: 3, md: 4, lg: 4 }
@@ -59,7 +77,7 @@ export default function DetailPage(props: any) {
                                 lg: '4 !important',
                             },
                         }}
-                        
+
                         gap={10}>
 
                         {images}
@@ -69,8 +87,6 @@ export default function DetailPage(props: any) {
                 </Grid >
 
             </Grid>
-
-
 
         </Grid >
     )

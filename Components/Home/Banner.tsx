@@ -32,7 +32,9 @@ export default function Banner() {
               width: { xs: 200, sm: 340, md: 350, lg: 445 },
               height: { xs: 250, sm: 500, md: 540, lg: 610 },
             }} >
+
               <img src="Assets/ Banner/banner.jpg" alt="" width="100%" />
+
             </Box>
 
           </Grid>
@@ -47,8 +49,8 @@ export default function Banner() {
             ml: { xs: 4, lg: 0 }
           }}>
 
-            <H2 fontWeight="bold">Hey It's Me </H2>
-            <H1 fontWeight="bold">SANDRA MANOJ</H1>
+            <H2 fontWeight="bold" fontFamily="'Righteous', cursive">Hey It's Me </H2>
+            <H1 fontWeight="bold" fontFamily="'Shadows Into Light', cursive">SANDRA MANOJ</H1>
 
           </Box>
 

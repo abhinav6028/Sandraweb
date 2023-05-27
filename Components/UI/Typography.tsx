@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import React from "react";
 
 export const H1 = (props: any) => {
-    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color, fontWeight } = props;
+    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color, fontWeight, fontFamily } = props;
 
     return (
         <Typography sx={{
@@ -12,7 +12,8 @@ export const H1 = (props: any) => {
             p: p, pl: pl, pr: pr, pt: pt, pb: pb, px: px, py: py,
             color: color,
             fontSize: { xs: '1.5rem', sm: '2.8rem', md: '3.5rem', lg: '4rem' },
-            fontWeight: fontWeight
+            fontWeight: fontWeight,
+            fontFamily: fontFamily
         }}>
             {props.children}
         </Typography>
@@ -21,7 +22,7 @@ export const H1 = (props: any) => {
 
 export const H2 = (props: any) => {
 
-    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color, lineHeight, fontWeight,fontFamily } = props;
+    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color, lineHeight, fontWeight, fontFamily } = props;
 
 
     return (
@@ -34,7 +35,8 @@ export const H2 = (props: any) => {
             color: color,
             fontSize: { xs: '1.3rem', sm: '2.2rem', md: '2.8rem', lg: '3rem' },
             lineHeight: lineHeight,
-            fontWeight: fontWeight, fontFamily:fontFamily
+            fontWeight: fontWeight,
+            fontFamily: fontFamily
         }}>
             {props.children}
         </Typography>
@@ -62,7 +64,7 @@ export const H3 = (props: any) => {
 }
 
 export const H4 = (props: any) => {
-    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color,fontWeight } = props;
+    const { width, m, ml, mr, mt, mb, mx, my, p, pl, pr, pt, pb, px, py, textAlign, color, fontWeight } = props;
 
     return (
         <Typography sx={{
@@ -73,7 +75,7 @@ export const H4 = (props: any) => {
             bgColor: 'red',
             color: color,
             fontSize: { xs: '1rem', sm: '1.3rem', md: '1.5rem', lg: '1.5rem' },
-            fontWeight:fontWeight
+            fontWeight: fontWeight
         }}>
             {props.children}
         </Typography>
