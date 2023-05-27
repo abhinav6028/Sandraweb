@@ -10,8 +10,10 @@ export default function Header() {
     return (
 
         <Grid container sx={{
-            position: 'fixed',
-            bgcolor: 'rgba(0, 0, 0, 0.4)'
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            bgcolor: 'red'
         }} >
 
             <Box sx={{

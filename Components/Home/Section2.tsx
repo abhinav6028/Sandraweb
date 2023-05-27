@@ -24,14 +24,14 @@ export default function Section2() {
       img: 'Assets/sectionimages/chiledhoodwithfamily.jpg'
     },
     {
-      heading: 'COLOURFULL MEMORIES',
+      heading: 'SPRING TIME OF DAYS',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my school life',
       path: '/schoollife',
       img: 'Assets/sectionimages/schoollife.jpg'
     },
     {
-      heading: 'COLOURFULL LIFE',
+      heading: 'COLLEGITE YEAR',
       discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
       buttonText: 'More about my college life',
       path: '/collegelife',
