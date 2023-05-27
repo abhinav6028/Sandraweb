@@ -4,20 +4,20 @@ import { H3, H5 } from '../Typography'
 
 export default function DetailPage(props: any) {
 
-    const { heading, description } = props;
-    
-    const images = []
+    const { heading, description,limit,filename } = props;
+
+    const images : any = []
+
 
     const loopImages = () => {
 
-
-        for (let index = 1; index < 63; index++) {
+        for (let index = 1; index < limit; index++) {
 
             images.push(
 
                 <ImageListItem>
                     <img
-                        src={`/Assets/innerImages/Myself/img-${index}.jpg`}
+                        src={`/Assets/innerImages/${filename}/img-${index}.jpg`}
                         alt={`image`}
                         loading="lazy"
                     />
@@ -27,7 +27,6 @@ export default function DetailPage(props: any) {
         }
 
     }
-
 
     const data = loopImages();
 
@@ -48,18 +47,17 @@ export default function DetailPage(props: any) {
             <Grid container justifyContent="center" sx={{
                 mt: { xs: 2, sm: 3, md: 4, lg: 6 }
             }}>
-                <Grid xs={9} sm={9} md={9} lg={9} sx={{
-                    //width: 500, height: 450, overflowY: 'scroll'
-                }}>
+
+                <Grid xs={9} sm={9} md={9} lg={9}>
+
                     <ImageList variant="masonry" cols={4} gap={10}>
-
-
-                        {/* {loopImages} */}
 
                         {images}
 
                     </ImageList>
+
                 </Grid >
+
             </Grid>
 
 

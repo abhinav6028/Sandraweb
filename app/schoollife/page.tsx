@@ -1,8 +1,15 @@
+"use client"
+import School from '@/Components/School/School'
+import { Grid } from '@mui/material'
 import React from 'react'
 
 function page() {
   return (
-    <div>page</div>
+
+    <Grid container>
+      <School />
+    </Grid>
+
   )
 }
 

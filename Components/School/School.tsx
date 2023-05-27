@@ -1,18 +1,16 @@
-import { Box, Grid } from '@mui/material'
+import { Grid } from '@mui/material'
 import React from 'react'
 import DetailPage from '../UI/DetailPage/DetailPage'
-import { H3 } from '../UI/Typography'
 
-function MySelf() {
+export default function School() {
+    return (
+        <Grid container >
 
-  return (
-    <Grid container>
+            <DetailPage
 
-      <DetailPage
+                heading="COLOURFULL MEMORIES"
 
-        heading="ESSENCE OF MY LIFE"
-
-        description="As we have all heard 'every new beginning comes from some other beginning's end'. As a girl who always wished to do her graduation far away from her home and also being an only daughter at home it was really difficult for me to take such a decision. Any how as everyone could imagine being an only daughter and leaving my 
+                description="As we have all heard 'every new beginning comes from some other beginning's end'. As a girl who always wished to do her graduation far away from her home and also being an only daughter at home it was really difficult for me to take such a decision. Any how as everyone could imagine being an only daughter and leaving my 
         parents away and migrating to such a city as Bangalore was a really challenging task for me. Applying for CBZ course in Christ University was not a thing that I had in my mind. Never bad I thought
          about it also. It was my mom who had send my application form for Christ Deemed to be University. 
         She told me about this only when my interview date was send to my email. Never ever in my dreams had I thought about learning in such a big city like Bangalore. All that had passed and I had my interview. My interview was not that easy and I had a really tough time attending it, though the teachers were sweet. The questions were really hard. 
@@ -23,18 +21,11 @@ function MySelf() {
          And i could also see my father wiping off his tears making sure 
         nobody is watching him. Reaching the class after that the first day i thought i could never make friends with any of them here. But by time I got many friends here at Christ University and it has been really good time being her"
 
-        limit = "62"
+                limit="22"
 
-        filename = "Myself"
-      />
+                filename="Schooling"
+            />
 
-
-
-
-
-
-    </Grid>
-  )
+        </Grid >
+    )
 }
-
-export default MySelf
