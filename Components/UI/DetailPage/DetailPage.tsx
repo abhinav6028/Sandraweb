@@ -48,7 +48,7 @@ export default function DetailPage(props: any) {
                 mt: { xs: 2, sm: 3, md: 4, lg: 6 }
             }}>
 
-                <Grid xs={10} sm={10} md={10} lg={10}>
+                <Grid container xs={11.5} sm={11.5} md={11.7} lg={11}>
 
                     <ImageList variant="masonry"
                         sx={{

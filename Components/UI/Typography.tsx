@@ -96,7 +96,7 @@ export const H5 = (props: any) => {
             m: m, ml: ml, mr: mr, mt: mt, mb: mb, mx: mx, my: my,
             p: p, pl: pl, pr: pr, pt: pt, pb: pb, px: px, py: py,
             color: color,
-            fontSize: { xs: '.7rem', sm: '1rem', md: '1.1rem', lg: '1.2rem' },
+            fontSize: { xs: '.8rem', sm: '1.2rem', md: '1.4rem', lg: '1.4rem' },
             fontWeight: fontWeight,
             bgColor: bgColor
         }}>
