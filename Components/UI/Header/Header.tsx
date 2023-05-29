@@ -7,13 +7,19 @@ export default function Header() {
 
     const router = useRouter()
 
+    const scrollingTop = () => {
+        alert('zkjdnbfh')
+    }
+
     return (
 
         <Grid container sx={{
-            position: 'absolute',
+            position: 'fixed',
             top: 0,
             left: 0,
-            bgcolor: 'red'
+            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+            bgcolor: '#ffff'
+            // bgcolor: 'red'
         }} >
 
             <Box sx={{
@@ -23,7 +29,8 @@ export default function Header() {
 
                 <H3 fontWeight="570" fontFamily="'Sacramento', cursive"
                     cursor="pointer"
-                    onClick={() => router.push('/')}>Sandhra Manoj</H3>
+                    onClick={() => { console.log('dskmv jdfnvjdfjv')
+                    }}>Sandhra Manoj</H3>
 
             </Box>
 
