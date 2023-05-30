@@ -1,16 +1,24 @@
 import { Box, Grid, ImageList, ImageListItem } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import { H3, H5 } from '../Typography';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useRouter } from 'next/navigation';
+import { isNullishCoalesce } from 'typescript';
+import PopUpScreen from '../PopUpScreen/PopUpScreen';
 
 export default function DetailPage(props: any) {
 
     const { heading, description, limit, filename } = props;
 
-    const images: any = []
+    const images: any = [];
 
-    const router = useRouter()
+    const router = useRouter();
+
+    const [PopUp, setPopUp] = useState(false);
+
+    const [imageIndex, setImageIndex] = useState();
+
+    console.log("llllllllllllllllllllll", PopUp);
 
 
     const loopImages = () => {
@@ -19,13 +27,15 @@ export default function DetailPage(props: any) {
 
             images.push(
 
-                <ImageListItem >
+                <ImageListItem onClick={() => { setImageIndex(index), setPopUp(!PopUp) }}>
+
                     <img
                         src={`/Assets/innerImages/${filename}/img-${index}.jpg`}
                         alt={`image`}
                         loading="lazy"
                     />
-                </ImageListItem>
+
+                </ImageListItem >
             )
 
         }
@@ -38,7 +48,7 @@ export default function DetailPage(props: any) {
     return (
         <Grid container justifyContent="center" >
 
-            {/* onClick={console.log('working properly')} */}
+            {PopUp ? <PopUpScreen filename={filename} index={imageIndex} setPopUp={setPopUp} /> : isNullishCoalesce}
 
             <Grid container >
 
@@ -68,7 +78,7 @@ export default function DetailPage(props: any) {
 
                 <Grid container xs={11.5} sm={11.5} md={11.7} lg={11}>
 
-                    <ImageList variant="masonry"  gap={8} sx={{
+                    <ImageList variant="masonry" gap={8} sx={{
                         columnCount: {
                             xs: '2 !important',
                             sm: '2 !important',
