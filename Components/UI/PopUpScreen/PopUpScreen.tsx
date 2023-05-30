@@ -7,8 +7,6 @@ export default function PopUp(props: any) {
 
     const URL = `/Assets/innerImages/${filename}/img-${index}.jpg`
 
-
-
     return (
 
         <Grid container>
