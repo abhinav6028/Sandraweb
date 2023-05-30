@@ -10,6 +10,7 @@ export default function PopUp(props: any) {
     return (
 
         <Grid container>
+
             <Grid
                 component="img"
                 sx={{
@@ -25,6 +26,7 @@ export default function PopUp(props: any) {
                 alt="The house from the offer."
                 src={URL}
             />
+            
         </Grid>
 
 
