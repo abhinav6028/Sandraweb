@@ -69,12 +69,12 @@ export default function Section2() {
 
           <Grid key={index} container lg={11} md={10} sm={9} xs={11.7} sx={{
             mt: { xs: 2, sm: 2, md: 3, lg: 4 },
-            justifyContent: 'space-around'
-          }}>
+            justifyContent: 'space-around',
+            boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
 
+          }}>
             <Grid container justifyContent="center" alignItems="center" lg={3} md={4} sm={4}
               sx={{
-                boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
               }}
             //bgcolor={MAIN_COLOUR}
 
@@ -104,8 +104,6 @@ export default function Section2() {
             //bgcolor={MAIN_COLOUR}
             sx={{
               pb: { xs: 2, sm: 0, md: 0, lg: 0 },
-              boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
-
             }} >
 
             <Grid container sx={{
