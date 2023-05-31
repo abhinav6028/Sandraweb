@@ -50,7 +50,7 @@ export default function DetailPage(props: any) {
 
             {PopUp ? <PopUpScreen filename={filename} index={imageIndex} setPopUp={setPopUp} /> : isNullishCoalesce}
 
-            <Grid container >
+            <Grid item container >
 
                 <ArrowBackIosIcon
                     onClick={() => { router.push('/') }}
@@ -62,17 +62,17 @@ export default function DetailPage(props: any) {
             </Grid>
 
 
-            <Grid container sx={{
+            <Grid item container sx={{
                 py: { xs: 2, sm: 3, md: 4, lg: 4 }
             }}>
                 <H3 textAlign="center" fontWeight="bold" color="#A9A4DD">{heading}</H3>
             </Grid>
 
-            <Grid sx={{ textAlign: 'justify' }} container xs={10} sm={10} md={10} lg={10}   >
+            <Grid item sx={{ textAlign: 'justify' }} container xs={10} sm={10} md={10} lg={10}   >
                 <H5 fontWeight="550">{description}</H5>
             </Grid>
 
-            <Grid container justifyContent="center" sx={{
+            <Grid item container justifyContent="center" sx={{
                 mt: { xs: 2, sm: 3, md: 4, lg: 6 }
             }}>
 

@@ -73,71 +73,78 @@ export default function Section2() {
           }}>
 
             <Grid container justifyContent="center" alignItems="center" lg={3} md={4} sm={4}
-              bgcolor={MAIN_COLOUR}
+              sx={{
+                boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
+              }}
+            //bgcolor={MAIN_COLOUR}
 
             >
 
-              <Grid container lg={10}
-                sx={{
-                  justifyContent: "center",
-                  alignItems: "center",
-                  border: "10px solid #FFFFFF",
-                  my: 3,
-                  height: { xs: 250, lg: 300 },
-                  width: { xs: 250, lg: 300 },
-                  backgroundImage: `url('${data.img}')`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center center center center',
+            <Grid container lg={10}
+              sx={{
+                justifyContent: "center",
+                alignItems: "center",
+                border: "10px solid #FFFFFF",
+                my: 3,
+                height: { xs: 250, lg: 300 },
+                width: { xs: 250, lg: 300 },
+                backgroundImage: `url('${data.img}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center center center center',
 
-                }}>
-               
-              </Grid>
-
-            </Grid>
-
-
-
-            <Grid lg={8} md={8} sm={8} bgcolor={MAIN_COLOUR} sx={{
-              pb: { xs: 2, sm: 0, md: 0, lg: 0 }
-            }} >
-
-              <Grid container sx={{
-                mt: { xs: 2, lg: 5 },
-                ml: { xs: 2, lg: 4 }
               }}>
-                <H4 fontWeight="600">{data.heading}</H4>
-              </Grid>
-
-              <Grid container xs={10} lg={8} fontWeight="600" sx={{
-                mt: { xs: 1, lg: 3 },
-                ml: { xs: 2, lg: 4 }
-              }}>
-                <H5 fontWeight="600">{data.discription}</H5>
-              </Grid>
-
-              <Grid container sx={{
-                mt: { xs: 2, lg: 5 },
-                ml: { xs: 2, lg: 4 }
-              }}>
-
-                <Box
-                  onClick={() => router.push(`${data.path}`)}
-                  sx={{
-                    bgcolor: "#ffff",
-                    py: 1,
-                    px: { xs: 3, lg: 6 },
-                    cursor: 'pointer'
-                  }}>
-                  <H5 fontWeight="550" >SHOW MORE</H5>
-                </Box>
-
-              </Grid>
 
             </Grid>
 
           </Grid>
-        )
-      }
+
+
+
+          <Grid lg={8} md={8} sm={8}
+            //bgcolor={MAIN_COLOUR}
+            sx={{
+              pb: { xs: 2, sm: 0, md: 0, lg: 0 },
+              boxShadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
+
+            }} >
+
+            <Grid container sx={{
+              mt: { xs: 2, lg: 5 },
+              ml: { xs: 2, lg: 4 }
+            }}>
+              <H4 fontWeight="600">{data.heading}</H4>
+            </Grid>
+
+            <Grid container xs={10} lg={8} fontWeight="600" sx={{
+              mt: { xs: 1, lg: 3 },
+              ml: { xs: 2, lg: 4 }
+            }}>
+              <H5 fontWeight="600">{data.discription}</H5>
+            </Grid>
+
+            <Grid container sx={{
+              mt: { xs: 2, lg: 5 },
+              ml: { xs: 2, lg: 4 }
+            }}>
+
+              <Box
+                onClick={() => router.push(`${data.path}`)}
+                sx={{
+                  bgcolor: "#ffff",
+                  py: 1,
+                  px: { xs: 3, lg: 6 },
+                  cursor: 'pointer'
+                }}>
+                <H5 fontWeight="550" >SHOW MORE</H5>
+              </Box>
+
+            </Grid>
+
+          </Grid>
+
+          </Grid>
+  )
+}
 
     </Grid >
   )
