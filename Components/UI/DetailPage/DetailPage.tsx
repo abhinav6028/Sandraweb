@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { H3, H5 } from '../Typography';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { useRouter } from 'next/navigation';
-import { isNullishCoalesce } from 'typescript';
 import PopUpScreen from '../PopUpScreen/PopUpScreen';
 
 export default function DetailPage(props: any) {
@@ -16,10 +15,7 @@ export default function DetailPage(props: any) {
 
     const [PopUp, setPopUp] = useState(false);
 
-    const [imageIndex, setImageIndex] = useState();
-
-    console.log("llllllllllllllllllllll", PopUp);
-
+    const [imageIndex, setImageIndex]: any = useState();
 
     const loopImages = () => {
 
@@ -42,13 +38,20 @@ export default function DetailPage(props: any) {
 
     }
 
+
+
     const data = loopImages();
 
 
     return (
+
         <Grid container justifyContent="center" >
 
-            {PopUp ? <PopUpScreen filename={filename} index={imageIndex} setPopUp={setPopUp} /> : isNullishCoalesce}
+            <Grid container>
+
+                {PopUp ? <PopUpScreen filename={filename} index={imageIndex} setPopUp={setPopUp} /> : null}
+
+            </Grid>
 
             <Grid item container >
 
@@ -76,7 +79,7 @@ export default function DetailPage(props: any) {
                 mt: { xs: 2, sm: 3, md: 4, lg: 6 }
             }}>
 
-                <Grid container xs={11.5} sm={11.5} md={11.7} lg={11}>
+                <Grid item container xs={11.5} sm={11.5} md={11.7} lg={11}>
 
                     <ImageList variant="masonry" gap={8} sx={{
                         columnCount: {
@@ -91,11 +94,11 @@ export default function DetailPage(props: any) {
 
                     </ImageList>
 
-
                 </Grid >
 
             </Grid>
 
         </Grid >
+
     )
 }
