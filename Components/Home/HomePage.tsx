@@ -9,7 +9,7 @@ export default function HomePage() {
             
             <Banner />
 
-            <Section2 />
+            {/* <Section2 /> */}
 
         </Grid >
     )

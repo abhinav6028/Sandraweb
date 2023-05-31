@@ -1,6 +1,5 @@
 'use client'
 import HomePage from '@/Components/Home/HomePage'
-import Footer from '@/Components/UI/Footer/Footer'
 import Header from '@/Components/UI/Header/Header'
 import { Grid } from '@mui/material'
 import React, { useState } from 'react'
@@ -18,8 +17,6 @@ function page() {
       <Header />
 
       <HomePage />
-
-      <Footer />
 
     </Grid>
 
