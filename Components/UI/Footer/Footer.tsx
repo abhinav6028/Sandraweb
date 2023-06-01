@@ -18,24 +18,22 @@ export default function Footer() {
 
         < Grid container justifyContent="center" sx={{ mt: 4 }}>
 
-            {sound ? <Sound  /> : null}
+            {sound ? <Sound /> : null}
 
             <Box onClick={() => setSound(!sound)}>
 
                 <Box
                     component="img"
                     sx={{
-                        height: 233,
+                        height: 400,
                         width: 350,
-                        maxHeight: { xs: 233, md: 167 },
-                        maxWidth: { xs: 350, md: 250 },
                     }}
                     alt="The house from the offer."
-                    src="/"
+                    src="/Assets/Footer/footerImage.png"
                 />
 
                 {/* <Sound /> */}
-                
+
 
             </Box>
 
