@@ -12,13 +12,12 @@ export default function Footer() {
     const [sound, setSound] = useState(false)
 
 
+
     return (
-
-
 
         < Grid container justifyContent="center" sx={{ mt: 4 }}>
 
-            {sound ? <Sound /> : null}
+            {/* {sound ? <Sound /> : null} */}
 
             <Box onClick={() => setSound(!sound)}>
 

@@ -12,7 +12,6 @@ export default function Sound(props: any) {
             <audio controls autoPlay >
                 <source src={audioUrl} type="audio/mp3" />
                 {/* <source src="horse.mp3" type="audio/mpeg" /> */}
-                Your browser does not support the audio tag.
             </audio>
 
         </Grid>
