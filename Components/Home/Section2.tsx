@@ -46,7 +46,7 @@ const Section2 = () => {
     <Grid container justifyContent="center">
 
 
-      <Grid md={10} sx={{ py: 10 }}>
+      <Grid md={10} sx={{ py: { xs: 5, md: 10 } }} >
 
 
         <H5 m={1}>Hey,  it's me Sandra... How y'all doing?
