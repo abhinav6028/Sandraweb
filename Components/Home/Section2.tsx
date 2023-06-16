@@ -71,7 +71,18 @@ const Section2 = () => {
       {
         sectionItems.map(data =>
 
-          <Grid justifyContent="center" alignItems="center" container sx={{ boxShadow: PRIMARY_SHADOW, m: 1, bgcolor: "white", }}>
+          <Grid justifyContent="center" alignItems="center"
+            container sx={{
+              boxShadow: PRIMARY_SHADOW, m: 1, bgcolor: "white",
+              opacity: "100%",
+              backgroundImage: "url(/Assets/innerImages/CollageDays/section.png)",
+              backgroundColor: "rgba(255, 255, 255, 0.486)",
+              backgroundBlendmode: "overlay"
+
+            }}>
+
+
+            <img src="" alt="" />
 
             <Grid md={4} sx={{ p: 2 }}>
 
