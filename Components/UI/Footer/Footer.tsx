@@ -7,8 +7,7 @@ export const Footer = () => {
 
         <Grid container>
 
-            <video style={{ backgroundImage: "url(Assets/innerImages/CollageDays/img-1.jpg)" }} width="100%" controls>
-
+            <video width="100%" controls>
 
                 <source src={`/Assets/innerImages/${"CollageDays"}/footer-vid.mp4`} type="video/mp4" />
 

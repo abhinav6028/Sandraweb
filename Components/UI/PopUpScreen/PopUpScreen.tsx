@@ -23,7 +23,7 @@ export default function PopUp(props: any) {
             backgroundColor: 'rgba(100, 100, 100, 0.9)'
         }}>
 
-            <Grid onClick={() => setPopUp(false)} container sx={{
+            {/* <Grid onClick={() => setPopUp(false)} container sx={{
                 position: 'fixed',
                 top: "50%",
                 left: "50%",
@@ -35,7 +35,7 @@ export default function PopUp(props: any) {
             }}>
 
 
-            </Grid >
+            </Grid > */}
 
 
             {/* <CloseIcon onClick={() => setPopUp(false)} sx={{
