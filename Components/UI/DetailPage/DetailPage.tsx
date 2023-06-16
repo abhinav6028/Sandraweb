@@ -4,12 +4,16 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import PopUpScreen from '../PopUpScreen/PopUpScreen';
 import { useRouter } from 'next/navigation';
 import { H3, H5 } from '../Typography/Typography';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function DetailPage(props: any) {
 
-    const { heading, description, limit, filename } = props;
+    const { heading, description, limit, video_limit, filename } = props;
 
     const images: any = [];
+
+    const videos: any = [];
+
 
     const router = useRouter();
 
@@ -31,6 +35,35 @@ export default function DetailPage(props: any) {
                         loading="lazy"
                     />
 
+                    {/* <LazyLoadImage
+                        width="100%"
+                        src={`/Assets/innerImages/${filename}/img-${index}.jpg`}
+                        alt={`image`}
+                        effect="blur"
+                    /> */}
+
+                </ImageListItem >
+            )
+
+        }
+
+    }
+
+    const loopVideos = () => {
+
+        for (let index = 1; index < video_limit; index++) {
+
+            videos.push(
+
+                <ImageListItem onClick={() => { setImageIndex(index), setPopUp(!PopUp) }}>
+
+
+                    <video width="100%" height="240" controls>
+                        <source src={`Assets/innerImages/${filename}/vid-${index}.mp4`} type="video/mp4" />
+                        {/* <source src="movie.ogg" type="video/ogg" /> */}
+                        Your browser does not support the video tag.
+                    </video>
+
                 </ImageListItem >
             )
 
@@ -41,6 +74,9 @@ export default function DetailPage(props: any) {
 
 
     const data = loopImages();
+
+    const data2 = loopVideos();
+
 
 
     return (
@@ -98,6 +134,33 @@ export default function DetailPage(props: any) {
                     </ImageList>
 
                 </Grid >
+
+
+
+                <Grid item container xs={11.5} sm={11.5} md={11.7} lg={11}>
+
+                    <ImageList variant="masonry" gap={8} sx={{
+                        columnCount: {
+                            xs: '2 !important',
+                            sm: '2 !important',
+                            md: '3 !important',
+                            lg: '4 !important',
+                        },
+                    }}>
+
+                        {videos}
+
+                    </ImageList>
+
+                </Grid >
+
+
+
+            </Grid>
+
+            <Grid>
+
+
 
             </Grid>
 

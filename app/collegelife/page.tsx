@@ -15,7 +15,9 @@ function page() {
 
         description=""
 
-        limit="10"
+        limit="31"
+
+        video_limit="3"
 
         filename="CollageDays"
       />

@@ -16,7 +16,9 @@ function page() {
 
         description=""
 
-        limit="62"
+        limit="92"
+
+        video_limit="11"
 
         filename="Myself"
       />

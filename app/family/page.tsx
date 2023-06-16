@@ -15,7 +15,9 @@ function page() {
 
         description=""
 
-        limit="17"
+        limit="49"
+
+        video_limit="7"
 
         filename="Family"
       />

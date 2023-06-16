@@ -14,7 +14,9 @@ function page() {
 
         description=""
 
-        limit="22"
+        limit="65"
+
+        video_limit="6"
 
         filename="Schooling"
 
