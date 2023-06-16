@@ -43,31 +43,58 @@ const Section2 = () => {
 
   return (
 
-    <Grid container>
+    <Grid container justifyContent="center">
 
-      {sectionItems.map(data =>
 
-        <Grid justifyContent="center" alignItems="center" container sx={{ boxShadow: PRIMARY_SHADOW, m: 1, bgcolor: "white", }}>
+      <Grid md={10} sx={{ py: 10 }}>
 
-          <Grid md={4} sx={{ p: 2 }}>
 
-            <img width="100%" src={`${data.img}`} alt="" />
+        <H5 m={1}>Hey,  it's me Sandra... How y'all doing?
+          I'll start from a bit about myself, those who don't know me. I was born
+          and brought up in Kozhikode...the place where my heart is. I had a very happy
+          and fulfilling childhood growing up, I was always surrounded by love and support
+          from my parents. They encouraged me to pursue my passions and try new things,
+          whether it was playing sports, taking dance lessons, or joining the school band,
+          or may it be anything that I like.
+        </H5>
+
+        <H5 m={1}>I was a fine student in school, and I enjoyed learning new things and challenging myself academically.
+          During my school days,
+          I had a great group of friends who I loved to spend time with, whether
+          it was hanging out, going on rides, or having sleepovers. I know you people are missing me a lot.
+          I too miss those days where I was much happier!
+          Childhood is the most pleasing of all life’s seasons. So was mine. My childhood memories are
+          very special and I would like to treasure them. Those days were the best.</H5>
+
+      </Grid>
+
+      {
+        sectionItems.map(data =>
+
+          <Grid justifyContent="center" alignItems="center" container sx={{ boxShadow: PRIMARY_SHADOW, m: 1, bgcolor: "white", }}>
+
+            <Grid md={4} sx={{ p: 2 }}>
+
+              <img width="100%" src={`${data.img}`} alt="" />
+
+            </Grid>
+
+            <Grid md={8} sx={{ p: 1 }}>
+
+              <H4 mb={3} fontWeight="bold">{data.heading}</H4>
+
+              <H5 mb={3}>{data.discription}</H5>
+
+              <PrimaryButton bgcolor="dodgerblue" onClick={() => router.push(`${data.path}`)}>Show More</PrimaryButton>
+
+            </Grid>
 
           </Grid>
 
-          <Grid md={8} sx={{ p: 1 }}>
+        )
+      }
 
-            <H4 mb={3} fontWeight="bold">{data.heading}</H4>
 
-            <H5 mb={3}>{data.discription}</H5>
-
-            <PrimaryButton bgcolor="dodgerblue" onClick={() => router.push(`${data.path}`)}>Show More</PrimaryButton>
-
-          </Grid>
-
-        </Grid>
-
-      )}
 
     </Grid >
 
