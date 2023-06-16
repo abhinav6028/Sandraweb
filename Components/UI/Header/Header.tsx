@@ -1,8 +1,7 @@
 import { Box, Grid } from '@mui/material'
 import { useRouter } from 'next/navigation'
 import React from 'react'
-import { H3 } from '../Typography'
-
+import { H3 } from '../Typography/Typography'
 export default function Header() {
 
     const router = useRouter()

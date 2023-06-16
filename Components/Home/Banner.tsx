@@ -1,10 +1,10 @@
 import { Box, Grid } from '@mui/material'
 import React from 'react';
-import Bannerimage from '../../public/Assets/ Banner/banner.jpg';
-import { H2, H3, H1 } from '../UI/Typography';
-import styles from './animations.module.css';
+import { H1, H2 } from '../UI/Typography/Typography';
+
 
 export default function Banner() {
+
   return (
     <Grid container bgcolor="" justifyContent="center" sx={{
       backgroundImage: 'url("Assets/ Banner/Flowers.jpg")',
@@ -37,7 +37,7 @@ export default function Banner() {
 
             </Box>
 
-            
+
 
           </Grid>
 

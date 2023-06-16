@@ -1,5 +1,5 @@
 "use client"
-import School from '@/Components/School/School'
+import DetailPage from '@/Components/UI/DetailPage/DetailPage'
 import { Grid } from '@mui/material'
 import React from 'react'
 
@@ -7,7 +7,19 @@ function page() {
   return (
 
     <Grid container>
-      <School />
+
+      <DetailPage
+
+        heading="SPRING TIME OF DAYS"
+
+        description=""
+
+        limit="22"
+
+        filename="Schooling"
+
+      />
+
     </Grid>
 
   )

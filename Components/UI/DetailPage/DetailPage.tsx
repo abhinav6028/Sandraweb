@@ -1,9 +1,9 @@
 import { Box, Grid, ImageList, ImageListItem } from '@mui/material'
 import React, { useState } from 'react'
-import { H3, H5 } from '../Typography';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import { useRouter } from 'next/navigation';
 import PopUpScreen from '../PopUpScreen/PopUpScreen';
+import { useRouter } from 'next/navigation';
+import { H3, H5 } from '../Typography/Typography';
 
 export default function DetailPage(props: any) {
 
@@ -62,13 +62,16 @@ export default function DetailPage(props: any) {
                         ml: { xs: 3, sm: 3, md: 5, lg: 7 },
                         mt: 3, cursor: 'pointer'
                     }} />
+
             </Grid>
 
 
-            <Grid item container sx={{
+            <Grid justifyContent="center" item container sx={{
                 py: { xs: 2, sm: 3, md: 4, lg: 4 }
             }}>
+
                 <H3 textAlign="center" fontWeight="bold" color="#A9A4DD">{heading}</H3>
+
             </Grid>
 
             <Grid item sx={{ textAlign: 'justify' }} container xs={10} sm={10} md={10} lg={10}   >
