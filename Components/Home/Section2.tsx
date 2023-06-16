@@ -19,14 +19,21 @@ const Section2 = () => {
     },
     {
       heading: 'LOVE BLOSSOMS ME AND MY FAMILY',
-      discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
+      discription: `Childhood is the most pleasing of all life’s seasons. So was mine. My childhood memories are very special and I would like to treasure them. Those days were the best.`,
       buttonText: 'More about my childhood',
       path: '/family',
       img: 'Assets/sectionimages/chiledhoodwithfamily.jpg'
     },
     {
       heading: 'SPRINGTIME OF LIFE',
-      discription: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis pariatur provident ratione dolorem voluptate. Officiis, perferendis maxime temporibus fuga alias voluptates laborum eum cum quisquam quidem illo natus voluptatem saepe.',
+      discription: `I was a fine student in school, and I enjoyed learning new things and
+       challenging myself academically.
+          During my school days,
+          I had a great group of friends who I loved to spend time with, whether
+          it was hanging out, going on rides, or having sleepovers. I know you people are missing me a lot.
+          I too miss those days where I was much happier!
+          Childhood is the most pleasing of all life’s seasons. So was mine. My childhood memories are
+          very special and I would like to treasure them. Those days were the best.`,
       buttonText: 'More about my school life',
       path: '/schoollife',
       img: 'Assets/sectionimages/schoollife.jpg'
@@ -58,13 +65,6 @@ const Section2 = () => {
           or may it be anything that I like.
         </H5>
 
-        <H5 m={1}>I was a fine student in school, and I enjoyed learning new things and challenging myself academically.
-          During my school days,
-          I had a great group of friends who I loved to spend time with, whether
-          it was hanging out, going on rides, or having sleepovers. I know you people are missing me a lot.
-          I too miss those days where I was much happier!
-          Childhood is the most pleasing of all life’s seasons. So was mine. My childhood memories are
-          very special and I would like to treasure them. Those days were the best.</H5>
 
       </Grid>
 

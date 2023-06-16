@@ -7,7 +7,7 @@ export default function Banner() {
 
   return (
     <Grid container bgcolor="" justifyContent="center" sx={{
-      backgroundImage: 'url("Assets/ Banner/Flowers.jpg")',
+      backgroundImage: 'url("Assets/Banner/Flowers.jpg")',
       backgroundSize: 'cover',
     }} >
 

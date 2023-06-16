@@ -1,44 +1,21 @@
-import { Box, Grid } from '@mui/material';
-import React, { useState } from 'react';
-import useSound from 'use-sound';
-import Sound from '../Sound/Sound';
-//import boopSfx from '../../../public/Assets/Sounds/bhoom.mp3';
+import React from 'react'
+import { Grid } from '@mui/material'
 
-
-export default function Footer() {
-
-    const URL = '../../../public/Assets/Sounds/bhoom.mp3';
-
-    const [sound, setSound] = useState(false)
-
+export const Footer = () => {
 
     return (
 
+        <Grid container>
+
+            <video style={{ backgroundImage: "url(Assets/innerImages/CollageDays/img-1.jpg)" }} width="100%" controls>
 
 
-        < Grid container justifyContent="center" sx={{ mt: 4 }}>
+                <source src={`/Assets/innerImages/${"CollageDays"}/footer-vid.mp4`} type="video/mp4" />
 
-            {sound ? <Sound /> : null}
-
-            <Box onClick={() => setSound(!sound)}>
-
-                <Box
-                    component="img"
-                    sx={{
-                        height: 400,
-                        width: 350,
-                    }}
-                    alt="The house from the offer."
-                    src="/Assets/Footer/footerImage.png"
-                />
-
-                {/* <Sound /> */}
-
-
-            </Box>
+                Your browser does not support the video tag.
+            </video>
 
         </Grid >
 
     )
-
 }

@@ -55,16 +55,18 @@ export default function DetailPage(props: any) {
 
             videos.push(
 
-                <ImageListItem onClick={() => { setImageIndex(index), setPopUp(!PopUp) }}>
-
+                <Grid md={4} onClick={() => { setImageIndex(index), setPopUp(!PopUp) }}>
 
                     <video width="100%" height="240" controls>
-                        <source src={`Assets/innerImages/${filename}/vid-${index}.mp4`} type="video/mp4" />
+                        <source src={`/Assets/innerImages/${filename}/vid-${index}.mp4`} type="video/mp4" />
                         {/* <source src="movie.ogg" type="video/ogg" /> */}
                         Your browser does not support the video tag.
                     </video>
 
-                </ImageListItem >
+
+                </Grid >
+
+
             )
 
         }
@@ -136,31 +138,11 @@ export default function DetailPage(props: any) {
                 </Grid >
 
 
-
                 <Grid item container xs={11.5} sm={11.5} md={11.7} lg={11}>
 
-                    <ImageList variant="masonry" gap={8} sx={{
-                        columnCount: {
-                            xs: '2 !important',
-                            sm: '2 !important',
-                            md: '3 !important',
-                            lg: '4 !important',
-                        },
-                    }}>
+                    {videos}
 
-                        {videos}
-
-                    </ImageList>
-
-                </Grid >
-
-
-
-            </Grid>
-
-            <Grid>
-
-
+                </Grid>
 
             </Grid>
 
