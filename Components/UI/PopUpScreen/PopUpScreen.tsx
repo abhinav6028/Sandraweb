@@ -13,7 +13,7 @@ export default function PopUp(props: any) {
 
     return (
 
-        <Grid container sx={{
+        <Grid onClick={() => setPopUp(false)} container sx={{
             position: 'fixed',
             top: "50%",
             left: "50%",
