@@ -38,18 +38,18 @@ export default function PopUp(props: any) {
             </Grid >
 
 
-            <CloseIcon onClick={() => setPopUp(false)} sx={{
+            {/* <CloseIcon onClick={() => setPopUp(false)} sx={{
                 position: 'absolute',
                 top: 0, right: 0, m: 1,
                 cursor: "pointer", fontSize: "2.5rem", zindex: 130,
-            }} />
+            }} /> */}
 
 
             <Grid sx={{ bgcolor: "", p: 2, display: { xs: "flex", sm: "none" } }} container justifyContent="center"
                 alignItems="center" height="100vh">
 
 
-                <img style={{ position: "absolute", objectFit: "fill", padding: "10px" }}
+                <img style={{ position: "absolute", objectFit: "fill", padding: "10px", zIndex: "150" }}
                     // style={{ objectFit: "fill" }}
                     width="100%"
                     // height="100%"
