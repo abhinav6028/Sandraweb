@@ -13,7 +13,7 @@ export default function PopUp(props: any) {
 
     return (
 
-        <Grid onClick={() => setPopUp(false)} container sx={{
+        <Grid container sx={{
             position: 'fixed',
             top: "50%",
             left: "50%",
@@ -22,6 +22,21 @@ export default function PopUp(props: any) {
             zIndex: 100,
             backgroundColor: 'rgba(100, 100, 100, 0.9)'
         }}>
+
+            <Grid onClick={() => setPopUp(false)} container sx={{
+                position: 'fixed',
+                top: "50%",
+                left: "50%",
+                bgcolor: "Red",
+                transform: 'translate(-50%,-50%)',
+                zIndex: 50,
+                backgroundColor: 'rgba(100, 100, 100, 0.9)',
+                height: "100vh"
+            }}>
+
+
+            </Grid >
+
 
             <CloseIcon onClick={() => setPopUp(false)} sx={{
                 position: 'absolute',
@@ -47,7 +62,7 @@ export default function PopUp(props: any) {
                 alignItems="center" height="100vh">
 
 
-                <img style={{ position: "absolute", objectFit: "fill", padding: "10px" }}
+                <img style={{ position: "absolute", objectFit: "fill", padding: "10px", zIndex: "150" }}
                     // style={{ objectFit: "fill" }}
                     // width="100%"
                     height="100%"
@@ -58,10 +73,7 @@ export default function PopUp(props: any) {
 
 
 
-
         </Grid >
-
-
 
 
     )
